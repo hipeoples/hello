@@ -47,23 +47,23 @@
 // program starts here -------------------------------------------------------------------------------------
 // program starts here -------------------------------------------------------------------------------------
 
-noStroke();
+noStroke(); // shapes won't have an outline
 
-var x = 200;
-var y = 350;
-var ballWidth = 300;
-var ballHeight = 200;
+var x = 200; // starting location of ball
+var y = 350; // starting location of ball
+var ballWidth = 300; // starting dimensions of ball
+var ballHeight = 200; // starting dimensions of ball
 
-draw = function() {
-    background(255, 206, 71);
+draw = function() { // anything in here will repeat
+    background(255, 206, 71); // background
 
-    fill(191, 0, 255);
-    ellipse(x, y, ballWidth, ballHeight);
+    fill(191, 0, 255); // color of the ball
+    ellipse(x, y, ballWidth, ballHeight); // location and size of ball
 
-    x = x + 1;
-    y = y - 2;
-    ballWidth = ballWidth * 99/100;
-    ballHeight = ballHeight *  99/100;
+    x = x + 1; // this makes LOCATION of ball change at a certain speed
+    y = y - 2; // this makes LOCATION of ball change at a certain speed
+    ballWidth = ballWidth * 99/100; // this makes SIZE of ball change at a certain speed
+    ballHeight = ballHeight *  99/100; // this makes SIZE of ball change at a certain speed
 };
           
 // program ends here ----------------------------------------------------------------------------------------
