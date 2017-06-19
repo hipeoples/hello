@@ -60,8 +60,8 @@ draw = function() { // anything in here will repeat
     fill(191, 0, 255); // color of the ball
     ellipse(x, y, ballWidth, ballHeight); // location and size of ball
 
-    x = x + 1; // this makes LOCATION of ball change at a certain speed
-    y = y - 2; // this makes LOCATION of ball change at a certain speed
+    x = x + 0.5; // this makes LOCATION of ball change at a certain speed
+    y = y - 1; // this makes LOCATION of ball change at a certain speed
     ballWidth = ballWidth * 99/100; // this makes SIZE of ball change at a certain speed
     ballHeight = ballHeight *  99/100; // this makes SIZE of ball change at a certain speed
 };
